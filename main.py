@@ -23,7 +23,7 @@ def video_reader(pipe):
         if (counter % 60) == 0:
             # Show video frame evey 60 frames
             image = np.frombuffer(raw_image, np.uint8).reshape([rows, cols, 3])
-            cv2.imshow('Video', image)  # Show video image for testing
+            cv2.imshow('Video KLV', image)  # Show video image for testing
             cv2.waitKey(1)
         counter += 1
 
